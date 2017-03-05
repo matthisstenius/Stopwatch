@@ -1,0 +1,10 @@
+{
+  "name": "Auddly",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "foundation-sites": "^6.3.1"
+  }
+}

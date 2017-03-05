@@ -1,0 +1,22 @@
+<div class="row">
+    <div>
+        <h2>{{ formatTime(times) }}</h2>
+    </div>
+
+    <button class="button success" ng-click="start()" ng-disabled="isRunning">Start</button>
+    <button class="button secondary" ng-click="stop()" ng-disabled="! isRunning">Stop</button>
+    <button class="button primary" ng-click="lap()" ng-disabled="! isRunning">Lap</button>
+    <button class="button alert" ng-click="reset(totalReset = true)">Reset</button>
+
+    <div>
+        <h3>Total:</h3> 
+        <strong>{{ formatTime(totalTime) }}</strong>
+    </div>
+
+    <h3>Laps:</h3>
+    <ul ng-repeat="lap in laps">
+        <li>
+            {{ formatTime(lap) }}
+        </li>
+    </ul>    
+</div>
